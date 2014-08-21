@@ -13,6 +13,7 @@
 
 
 @property (weak, nonatomic) IBOutlet LFPickerTextField *nameField;
+@property (weak, nonatomic) IBOutlet LFPickerTextField *sexField;
 
 
 @end

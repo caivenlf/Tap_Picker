@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
     
+    [_sexField setDisplayData:@[@[@"lili",@"titi"],@[@"gg",@"mm"]] AndGetSelectedData:^(NSArray *indexs) {
+        NSLog(@"--->%@",indexs);
+    }];
+    
     [_nameField setDisplayData:@[@[@"1",@"2",@"3",@"4"],@[@"g",@"4"]] AndGetSelectedData:^(NSArray *indexs) {
         NSLog(@"--->%@",indexs);
     }];
