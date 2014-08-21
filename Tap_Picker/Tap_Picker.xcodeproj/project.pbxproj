@@ -22,6 +22,9 @@
 		31100C8819A4D16B00A4921E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31100C8619A4D16B00A4921E /* InfoPlist.strings */; };
 		31100C8A19A4D16B00A4921E /* Tap_PickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31100C8919A4D16B00A4921E /* Tap_PickerTests.m */; };
 		315D027919A5805C00BBC555 /* LFPickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 315D027819A5805C00BBC555 /* LFPickerTextField.m */; };
+		3165313619A5C6DB00DF918C /* PopPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3165313519A5C6DB00DF918C /* PopPicker.m */; };
+		3165313919A5C72C00DF918C /* PopPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3165313819A5C72C00DF918C /* PopPickerView.m */; };
+		3165313D19A5C78400DF918C /* PopPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3165313C19A5C78400DF918C /* PopPickerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,11 @@
 		31100C8919A4D16B00A4921E /* Tap_PickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tap_PickerTests.m; sourceTree = "<group>"; };
 		315D027719A5805C00BBC555 /* LFPickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFPickerTextField.h; sourceTree = "<group>"; };
 		315D027819A5805C00BBC555 /* LFPickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFPickerTextField.m; sourceTree = "<group>"; };
+		3165313419A5C6DB00DF918C /* PopPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopPicker.h; sourceTree = "<group>"; };
+		3165313519A5C6DB00DF918C /* PopPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopPicker.m; sourceTree = "<group>"; };
+		3165313719A5C72C00DF918C /* PopPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopPickerView.h; sourceTree = "<group>"; };
+		3165313819A5C72C00DF918C /* PopPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopPickerView.m; sourceTree = "<group>"; };
+		3165313C19A5C78400DF918C /* PopPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopPickerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,8 @@
 		31100C6419A4D16B00A4921E /* Tap_Picker */ = {
 			isa = PBXGroup;
 			children = (
+				3165313B19A5C75900DF918C /* 点击其他弹出Picker */,
+				3165313A19A5C73900DF918C /* 点击Text弹出Picker */,
 				31100C6D19A4D16B00A4921E /* AppDelegate.h */,
 				31100C6E19A4D16B00A4921E /* AppDelegate.m */,
 				31100C7019A4D16B00A4921E /* Main.storyboard */,
@@ -122,8 +132,6 @@
 				31100C7419A4D16B00A4921E /* ViewController.m */,
 				31100C7619A4D16B00A4921E /* Images.xcassets */,
 				31100C6519A4D16B00A4921E /* Supporting Files */,
-				315D027719A5805C00BBC555 /* LFPickerTextField.h */,
-				315D027819A5805C00BBC555 /* LFPickerTextField.m */,
 			);
 			path = Tap_Picker;
 			sourceTree = "<group>";
@@ -155,6 +163,27 @@
 				31100C8619A4D16B00A4921E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3165313A19A5C73900DF918C /* 点击Text弹出Picker */ = {
+			isa = PBXGroup;
+			children = (
+				315D027719A5805C00BBC555 /* LFPickerTextField.h */,
+				315D027819A5805C00BBC555 /* LFPickerTextField.m */,
+			);
+			name = "点击Text弹出Picker";
+			sourceTree = "<group>";
+		};
+		3165313B19A5C75900DF918C /* 点击其他弹出Picker */ = {
+			isa = PBXGroup;
+			children = (
+				3165313419A5C6DB00DF918C /* PopPicker.h */,
+				3165313519A5C6DB00DF918C /* PopPicker.m */,
+				3165313719A5C72C00DF918C /* PopPickerView.h */,
+				3165313819A5C72C00DF918C /* PopPickerView.m */,
+				3165313C19A5C78400DF918C /* PopPickerView.xib */,
+			);
+			name = "点击其他弹出Picker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +264,7 @@
 			files = (
 				31100C7719A4D16B00A4921E /* Images.xcassets in Resources */,
 				31100C6919A4D16B00A4921E /* InfoPlist.strings in Resources */,
+				3165313D19A5C78400DF918C /* PopPickerView.xib in Resources */,
 				31100C7219A4D16B00A4921E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,10 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3165313919A5C72C00DF918C /* PopPickerView.m in Sources */,
 				31100C7519A4D16B00A4921E /* ViewController.m in Sources */,
 				31100C6F19A4D16B00A4921E /* AppDelegate.m in Sources */,
 				31100C6B19A4D16B00A4921E /* main.m in Sources */,
 				315D027919A5805C00BBC555 /* LFPickerTextField.m in Sources */,
+				3165313619A5C6DB00DF918C /* PopPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +417,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tap_Picker/Tap_Picker-Prefix.pch";
 				INFOPLIST_FILE = "Tap_Picker/Tap_Picker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,6 +431,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tap_Picker/Tap_Picker-Prefix.pch";
 				INFOPLIST_FILE = "Tap_Picker/Tap_Picker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

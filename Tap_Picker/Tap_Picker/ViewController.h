@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet LFPickerTextField *nameField;
 @property (weak, nonatomic) IBOutlet LFPickerTextField *sexField;
 
+- (IBAction)buttonAction:(id)sender;
 
 @end

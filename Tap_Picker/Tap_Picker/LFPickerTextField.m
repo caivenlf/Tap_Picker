@@ -60,7 +60,9 @@
         NSInteger row = [_picker selectedRowInComponent:i];
         [tmpArray addObject:@(row)];
     }
-    returnSelectedData(tmpArray);
+    if (returnSelectedData) {
+        returnSelectedData(tmpArray);
+    }
     [self resignFirstResponder];
 }
 

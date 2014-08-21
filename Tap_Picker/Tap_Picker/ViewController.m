@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PopPicker.h"
 
 @interface ViewController ()
 
@@ -37,4 +38,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonAction:(id)sender {
+    PopPicker *pop = [[PopPicker alloc] initWithPickDatas:@[@[@"1",@"2",@"3",@"4"],@[@"g",@"4"],@[@"feng",@"li"]] AndGetSelectedIndexs:^(NSArray *selectedArray) {
+        
+        NSLog(@"%@",selectedArray);
+    }];
+}
 @end
